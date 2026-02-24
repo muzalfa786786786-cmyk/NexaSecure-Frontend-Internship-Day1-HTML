@@ -1,0 +1,56 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body */
+body{
+    background:linear-gradient(to right,#a0062a,#ea2b57,#a0062a);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Heading */
+.title{
+    color:white;
+    margin-bottom:40px;
+}
+
+/* Flex Container */
+.container{
+    width:90%;
+    max-width:1100px;
+    background:#f5e403;
+    padding:40px;
+    border-radius:15px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+/* Flex Items */
+.box{
+    flex:1 1 150px;
+    background:linear-gradient(135deg,#cb112d,#f4214f);
+    color:white;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* Hover Effect */
+.box:hover{
+    transform:translateY(-8px);
+    box-shadow:0px 10px 20px rgba(0,0,0,0.4);
+}
