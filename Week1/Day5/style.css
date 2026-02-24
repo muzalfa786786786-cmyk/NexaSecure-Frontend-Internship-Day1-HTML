@@ -1,0 +1,142 @@
+/* Reset Default Settings */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar{
+    width:100%;
+    background:#edda04;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:18px;
+}
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:40px;
+height:40px;
+border-radius:50%;
+}
+/* Hero Section with Background Image */
+
+.hero{
+height:90vh;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+position:relative;
+}
+/* Dark Overlay */
+.hero::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(241, 4, 4, 0.6);
+}
+
+.hero div{
+    position:relative;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.hero button{
+    padding:12px 25px;
+    background:orange;
+    color:white;
+    border:none;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+/* About Section */
+.about{
+    padding:50px;
+    text-align:center;
+    background:#f4f4f4;
+}
+
+/* Services Section */
+.services{
+    padding:50px;
+    text-align:center;
+}
+
+.service-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    background:#f4bb0f;
+    color:white;
+    padding:30px;
+    width:200px;
+    border-radius:10px;
+}
+
+/* Contact Section */
+.contact{
+    padding:50px;
+    text-align:center;
+    background:#f4f4f4;
+}
+
+/* Footer */
+footer{
+    background:#ecca08;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+/* Responsive Design */
+@media(max-width:768px){
+    
+    .navbar{
+        flex-direction:column;
+    }
+
+    .service-box{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero h2{
+        font-size:30px;
+        text-align:left;
+    }
+}
